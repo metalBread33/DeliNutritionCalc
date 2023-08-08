@@ -1,0 +1,15 @@
+C:\Users\kfoug\Desktop\Deli Calc\PublixDeliNutritionalCalc.CLI\bin\Debug\net7.0\PublixDeliNutritionalCalc.CLI.exe
+C:\Users\kfoug\Desktop\Deli Calc\PublixDeliNutritionalCalc.CLI\bin\Debug\net7.0\PublixDeliNutritionalCalc.CLI.deps.json
+C:\Users\kfoug\Desktop\Deli Calc\PublixDeliNutritionalCalc.CLI\bin\Debug\net7.0\PublixDeliNutritionalCalc.CLI.runtimeconfig.json
+C:\Users\kfoug\Desktop\Deli Calc\PublixDeliNutritionalCalc.CLI\bin\Debug\net7.0\PublixDeliNutritionalCalc.CLI.dll
+C:\Users\kfoug\Desktop\Deli Calc\PublixDeliNutritionalCalc.CLI\bin\Debug\net7.0\PublixDeliNutritionalCalc.CLI.pdb
+C:\Users\kfoug\Desktop\Deli Calc\PublixDeliNutritionalCalc.CLI\obj\Debug\net7.0\PublixDeliNutritionalCalc.CLI.csproj.AssemblyReference.cache
+C:\Users\kfoug\Desktop\Deli Calc\PublixDeliNutritionalCalc.CLI\obj\Debug\net7.0\PublixDeliNutritionalCalc.CLI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kfoug\Desktop\Deli Calc\PublixDeliNutritionalCalc.CLI\obj\Debug\net7.0\PublixDeliNutritionalCalc.CLI.AssemblyInfoInputs.cache
+C:\Users\kfoug\Desktop\Deli Calc\PublixDeliNutritionalCalc.CLI\obj\Debug\net7.0\PublixDeliNutritionalCalc.CLI.AssemblyInfo.cs
+C:\Users\kfoug\Desktop\Deli Calc\PublixDeliNutritionalCalc.CLI\obj\Debug\net7.0\PublixDeliNutritionalCalc.CLI.csproj.CoreCompileInputs.cache
+C:\Users\kfoug\Desktop\Deli Calc\PublixDeliNutritionalCalc.CLI\obj\Debug\net7.0\PublixDeliNutritionalCalc.CLI.dll
+C:\Users\kfoug\Desktop\Deli Calc\PublixDeliNutritionalCalc.CLI\obj\Debug\net7.0\refint\PublixDeliNutritionalCalc.CLI.dll
+C:\Users\kfoug\Desktop\Deli Calc\PublixDeliNutritionalCalc.CLI\obj\Debug\net7.0\PublixDeliNutritionalCalc.CLI.pdb
+C:\Users\kfoug\Desktop\Deli Calc\PublixDeliNutritionalCalc.CLI\obj\Debug\net7.0\PublixDeliNutritionalCalc.CLI.genruntimeconfig.cache
+C:\Users\kfoug\Desktop\Deli Calc\PublixDeliNutritionalCalc.CLI\obj\Debug\net7.0\ref\PublixDeliNutritionalCalc.CLI.dll
