@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PDC_Library.Models
+namespace PDC.Library.Models
 {
-    internal class NutritionInfo   //Stores the nutritional information for items
+    public class NutritionInfo   //Stores the nutritional information for items
     {
         public uint Calories { get; set; }
         public uint Carbs { get; set; }
@@ -28,6 +28,12 @@ namespace PDC_Library.Models
             UnSaturatedFat = uFat;
             Sodium = sodium;
             Cholesterol = cholesterol;
+        }
+
+        public NutritionInfo() 
+        {
+            Calories = 0; Carbs = 0; Fat = 0; Protein = 0; SaturatedFat = 0;
+            UnSaturatedFat = 0; Sodium = 0; Cholesterol = 0;
         }
 
         public override string ToString()
