@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace PDC.Library.Models
 {
-    internal class HotLine
+    public class HotLine
     {
+        public NutritionInfo nutrition { get; set; }
+        public string name { get; set; }
     }
 }

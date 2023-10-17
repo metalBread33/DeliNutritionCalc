@@ -10,6 +10,6 @@ namespace PDC.Library.Models
     {
         public NutritionInfo nutrition { get; set; }
         public string name { get; set; }
-
+        public SubToppings toppings { get; set; }
     }
 }

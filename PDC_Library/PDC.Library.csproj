@@ -16,7 +16,6 @@
     <Folder Include="Database\Traditional\BoarsHead\Cheese\" />
     <Folder Include="Database\Traditional\BoarsHead\Turkey\" />
     <Folder Include="Database\Traditional\Publix\" />
-    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>

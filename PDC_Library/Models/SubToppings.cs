@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PDC.Library.Models
 {
-    internal class SubToppings
+    public class SubToppings
     {
         public string name { get; set; }
         public NutritionInfo nutrition { get; set; }
