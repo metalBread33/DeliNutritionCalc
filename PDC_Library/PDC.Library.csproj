@@ -9,13 +9,6 @@
   <ItemGroup>
     <Folder Include="Database\Hotcase\" />
     <Folder Include="Database\Subshop\" />
-    <Folder Include="Database\Traditional\BoarsHead\Ham\" />
-    <Folder Include="Database\Traditional\BoarsHead\Beef\" />
-    <Folder Include="Database\Traditional\BoarsHead\Cured\" />
-    <Folder Include="Database\Traditional\BoarsHead\Loaves\" />
-    <Folder Include="Database\Traditional\BoarsHead\Cheese\" />
-    <Folder Include="Database\Traditional\BoarsHead\Turkey\" />
-    <Folder Include="Database\Traditional\Publix\" />
   </ItemGroup>
 
 </Project>

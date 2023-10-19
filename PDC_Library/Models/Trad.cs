@@ -12,5 +12,11 @@ namespace PDC.Library.Models
         public NutritionInfo nutrition { get; set; }
         public decimal weight { get; set; }
         public string name {get; set; }
+
+
+        public override string ToString()
+        {
+            return $"{name}\nWeight: {weight} lbs\n{nutrition}";
+        }
     }
 }
