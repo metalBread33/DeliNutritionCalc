@@ -6,7 +6,8 @@
         {
             bool Continue = true;
             Console.WriteLine("Welcome to the Publix Deli Nutritional" +
-                " Calculator (Not Official)");
+                " Calculator (Not Official) \nThis CLI is used for testing" +
+                "features as they are implemented");
             do
             {
                 int choice = int.Parse(Menu());

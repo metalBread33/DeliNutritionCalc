@@ -20,7 +20,7 @@ namespace PDC.Library.Services
             info.Fat = fat;
             info.Protein = protein;
             info.SaturatedFat= satFat;
-            info.UnSaturatedFat= uFat;
+            info.TransFat= uFat;
             info.Sodium = sodium;
             info.Cholesterol = cholesterol;
         }

@@ -12,4 +12,8 @@
     <None Remove="Database\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PDC.Database\PDC.Database.csproj" />
+  </ItemGroup>
+
 </Project>
