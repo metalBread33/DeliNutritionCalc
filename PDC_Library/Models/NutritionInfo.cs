@@ -8,17 +8,17 @@ namespace PDC.Library.Models
 {
     public class NutritionInfo   //Stores the nutritional information for items
     {
-        public uint Calories { get; set; }
-        public uint Carbs { get; set; }
-        public uint Fat { get; set; }
-        public uint Protein { get; set; }
-        public uint SaturatedFat { get; set; }
-        public uint TransFat { get; set; }
-        public uint Sodium { get; set; }
-        public uint Cholesterol { get; set; }
+        public float Calories { get; set; }
+        public float Carbs { get; set; }
+        public float Fat { get; set; }
+        public float Protein { get; set; }
+        public float SaturatedFat { get; set; }
+        public float TransFat { get; set; }
+        public float Sodium { get; set; }
+        public float Cholesterol { get; set; }
 
-        public NutritionInfo(uint cal, uint carbs, uint fat, uint protein,
-            uint satFat, uint tFat, uint sodium, uint cholesterol) 
+        public NutritionInfo(float cal, float carbs, float fat, float protein,
+            float satFat, float tFat, float sodium, float cholesterol) 
         {
             Calories = cal;
             Carbs = carbs;

@@ -1,4 +1,6 @@
-﻿namespace PDC.CLI
+﻿using PDC.Database;
+
+namespace PDC.CLI
 {
     internal class Program
     {
@@ -8,6 +10,10 @@
             Console.WriteLine("Welcome to the Publix Deli Nutritional" +
                 " Calculator (Not Official) \nThis CLI is used for testing" +
                 "features as they are implemented");
+            Console.WriteLine("Testing TROG abilitiy to read from a file");
+            List<TrogSQLEntry> turkeys = TrogSQL.current.getFromFile("hi");
+            foreach (var turkey in turkeys)
+                Console.WriteLine(turkey.ToString());
             do
             {
                 int choice = int.Parse(Menu());

@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\PDC.Database\PDC.Database.csproj" />
     <ProjectReference Include="..\PDC_Library\PDC.Library.csproj" />
   </ItemGroup>
 

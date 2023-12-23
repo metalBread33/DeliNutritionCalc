@@ -11,7 +11,8 @@ namespace PDC.Library.Services
     {
         public NutritionInfoServices() { }
 
-        public void UpdateInfo (uint cal, uint carbs, uint fat, uint protein,
+        /*
+        public void UpdateInfo (float cal, uint carbs, uint fat, uint protein,
             uint satFat, uint uFat, uint sodium, uint cholesterol,
             NutritionInfo info)
         {
@@ -24,5 +25,6 @@ namespace PDC.Library.Services
             info.Sodium = sodium;
             info.Cholesterol = cholesterol;
         }
+        */
     }
 }
