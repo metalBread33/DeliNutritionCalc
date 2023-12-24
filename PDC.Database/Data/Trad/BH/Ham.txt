@@ -1,0 +1,9 @@
+﻿ID,Name,Calories,Carbs,Fat,Protein,Sat,Trans,Sodium,Choles,ServingSize
+01,Brown Sugar & Spice Ham,70,3,2.5,9,0.5,0,580,25,2
+02,42% Lower Sodium Deluxe Ham,60,1,10,0,0,480,25,2
+03,Bourbonridge Smoked Ham,70,2,2.5,10,0.5,0,400,30,2
+04,Peppenero Garlic Ham,70,2,0.5,11,0.5,0,600,30,2
+05,Deluxe Ham,60,2,1,9,0,0,580,25,2
+06,Maple Glazed Honey Coat Ham,60,3,1,10,0,0,570,20,2
+07,Mortadella with Pistachio Nuts,170,2,14,10,5,0,560,30,2
+08,Rosemary and Sundried Tomato Ham,70,2,2.5,10,1,0,500,10,2

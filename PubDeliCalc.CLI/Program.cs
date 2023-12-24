@@ -67,7 +67,7 @@ namespace PDC.CLI
         //Function used to determine which file to read from when using CLI
         static string? TradFileSelection()
         {
-            Console.WriteLine("1)Publix \n2)Boar's Head?");
+            Console.WriteLine("1)Publix \n2)Boar's Head");
             var pOrBh = Console.ReadLine();
             int.TryParse(pOrBh, out var response);
             if(response == 1)
@@ -76,11 +76,14 @@ namespace PDC.CLI
             }
             if (response == 2)
             {
-                Console.WriteLine("1) Turkey \n2) Ham \n3) Beef \n4) Cheese \n5) Loaves and shit");
+                Console.WriteLine("1) Turkey \n2) Ham \n3) Beef \n4) Chicken" +
+                    "\n5) Loaves and shit \n6) Cheese");
                 var meatType = Console.ReadLine();
                 int.TryParse(meatType, out var file);
                 if (file == 1)
-                    return "\\Trad\\BH\\Turkey\\Turkey.txt";
+                    return "\\Trad\\BH\\Turkey.txt";
+                if (file == 2)
+                    return "\\Trad\\BH\\Ham.txt";
                 return null;
             }
 
