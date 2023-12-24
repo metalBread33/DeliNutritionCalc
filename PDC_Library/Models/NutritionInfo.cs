@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace PDC.Library.Models
 {
+    /*Model class used to store nutrional info for each item. Each class will have
+     an instance of NutritionInfo that contains all of the nutrition info*/
     public class NutritionInfo   //Stores the nutritional information for items
     {
         public float Calories { get; set; }

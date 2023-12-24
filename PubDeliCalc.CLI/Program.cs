@@ -1,7 +1,9 @@
 ﻿using PDC.Database;
 using PDC.Library.Models;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
+
+/*CLI used to test backend features as they are implemented. Useful for preventing
+ confusion when implementing a new feature.*/
 namespace PDC.CLI
 {
     internal class Program
@@ -16,10 +18,10 @@ namespace PDC.CLI
             {
                 int choice = int.Parse(Menu());
 
-                switch (choice) 
+                switch (choice)
                 {
                     case 0:
-                        Continue= false;
+                        Continue = false;
                         break;
                     case 1:
                         Traditional();
@@ -70,7 +72,7 @@ namespace PDC.CLI
             Console.WriteLine("1)Publix \n2)Boar's Head");
             var pOrBh = Console.ReadLine();
             int.TryParse(pOrBh, out var response);
-            if(response == 1)
+            if (response == 1)
             {
                 //Publix
             }
@@ -84,12 +86,22 @@ namespace PDC.CLI
                     return "\\Trad\\BH\\Turkey.txt";
                 if (file == 2)
                     return "\\Trad\\BH\\Ham.txt";
+                if (file == 3)
+                    return "\\Trad\\BH\\Beef.txt";
+                if (file == 4)
+                    return "\\Trad\\BH\\Chicken.txt";
+                if (file == 5)
+                    return "\\Trad\\BH\\Misc.txt";
+                if (file == 6)
+                    return "\\Trad\\BH\\Cheese.txt";
+
+
                 return null;
             }
 
             Console.WriteLine("File not found, try again");
             return null;
-            
+
         }
     }
 }

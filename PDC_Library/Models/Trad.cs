@@ -7,6 +7,7 @@ using PDC.Library.Models;
 
 namespace PDC.Library.Models
 {
+    /*Model class for traditional items (sliced meats and cheeses)*/
     public class Trad
     {
         public NutritionInfo nutrition { get; set; }

@@ -4,9 +4,8 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace PDC.Database
 {
-    /*The purpose of this class is to act as a database that stores the nutional info
-     of all items. Microsoft sql is busted on my computer and I cannot uninstall it. This
-    will essentially be troglodyte sql*/
+   /*Entries from trogSql; used for converting item from trogsql list to 
+    nutrition information*/
     public class TrogSQLEntry
     {
         public int Id { get; set; }
@@ -41,6 +40,9 @@ namespace PDC.Database
         }
     }
 
+    /*The purpose of this class is to act as a database that stores the nutional info
+    of all items. Microsoft sql is busted on my computer and I cannot uninstall it. This
+   will essentially be troglodyte sql*/
     public class TrogSQL
     {
         private static TrogSQL? _instance;
