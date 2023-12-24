@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace PDC.Database
 {
@@ -52,10 +53,16 @@ namespace PDC.Database
                 return _instance;
             }
         }
-        public List<TrogSQLEntry> getFromFile(string filename)
+        private static string root = "C:\\Users\\kfoug\\Desktop\\Deli Calc\\PDC.Database\\Data";
+        public List<TrogSQLEntry>? getFromFile(string filename)
         {
+            if (filename == null)
+            {
+                Console.WriteLine("File does not exist");
+                return null;
+            }
             List<TrogSQLEntry> list = new List<TrogSQLEntry>();
-            foreach(string line in File.ReadLines("C:\\Users\\kfoug\\Desktop\\Deli Calc\\PDC.Database\\Data\\Trad\\BH\\Turkey\\Turkey.txt"))
+            foreach (string line in File.ReadLines($"{root}{filename}"))
             {
                 string[] info = line.Split(',');
                 
