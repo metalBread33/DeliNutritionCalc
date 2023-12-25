@@ -59,10 +59,36 @@ namespace PDC.CLI
                 }
                 else break;
             }
-          
+
+            Console.Clear();
 
             foreach (var meat in meats)
                 Console.WriteLine(meat.ToString());
+
+            Console.WriteLine("Please select an item");
+            string? answer = Console.ReadLine();
+
+            /*int item;
+            while (true)
+            {
+                if (!int.TryParse(answer, out int selection))
+                    Console.WriteLine("Invalid option, plase try again");
+                else
+                {
+                    item = selection;
+                    break;
+                }
+            } */
+            int selection = validIntResponse(answer);
+            Console.WriteLine("How much does this item weigh (in lbs)");
+            answer = Console.ReadLine();
+            decimal weight = validDecResponse(answer);
+
+            Trad traditional = new Trad(meats[selection - 1], weight);
+
+            Console.WriteLine(traditional);
+
+
         }
 
         static void Sub()
@@ -117,6 +143,42 @@ namespace PDC.CLI
             Console.WriteLine("File not found, try again");
             return null;
 
+        }
+        
+        static int validIntResponse (string? answer)
+        {
+            while (true)
+            {
+                if (answer == null)
+                {
+                    Console.WriteLine("Invalid, try again");
+                    answer = Console.ReadLine ();
+                }
+                else if (!int.TryParse(answer, out int selection))
+                {
+                    Console.WriteLine("Invalid, try again");
+                    answer = Console.ReadLine();
+                }
+                else return selection;
+            }
+        }
+
+        static decimal validDecResponse (string? answer) 
+        {
+            while (true)
+            {
+                if (answer == null)
+                {
+                    Console.WriteLine("Invalid, try again");
+                    answer = Console.ReadLine();
+                }
+                else if (!decimal.TryParse(answer, out decimal selection))
+                {
+                    Console.WriteLine("Invalid, try again");
+                    answer = Console.ReadLine();
+                }
+                else return selection;
+            }
         }
     }
 }

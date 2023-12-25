@@ -54,8 +54,8 @@ namespace PDC.Library.Models
         public override string ToString()
         {
             return $"Calories: {Calories}\nCarbs: {Carbs}g\nFat: {Fat}g" +
-                $"\n\tSaturated Fat: {SaturatedFat}g\nTrans Fat:" +
-                $" {TransFat}g\nProtein: {Protein}g\nSodium: {Sodium}mg" +
+                $"\nSaturated Fat: {SaturatedFat}g\nTrans Fat:" +
+                $"{TransFat}g\nProtein: {Protein}g\nSodium: {Sodium}mg" +
                 $"\nCholesterol: {Cholesterol}mg";
         }
     }

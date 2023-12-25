@@ -23,6 +23,11 @@ namespace PDC.Library.Models
             Weight = weight;
             ServingSize = trog.ServingSize;
         }
+
+        public override string ToString()
+        {
+            return $"{ItemName}\n{Nutrition}\n{Weight}\n{ServingSize}";
+        }
     }
 
 }
