@@ -9,6 +9,28 @@ namespace PDC.Library.Services
 {
     public class NutritionInfoServices
     {
-        public NutritionInfoServices() { }
+        static private NutritionInfoServices? _instance;
+        
+        static public NutritionInfoServices current
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new NutritionInfoServices();
+                return _instance;
+            }
+        }
+
+        public void MultiplyByServings(float numServings, NutritionInfo nutInfo)
+        {
+            nutInfo.Calories *= numServings;
+            nutInfo.Carbs *= numServings;
+            nutInfo.Fat *= numServings;
+            nutInfo.Protein *= numServings;
+            nutInfo.SaturatedFat *= numServings;
+            nutInfo.TransFat *= numServings;
+            nutInfo.Sodium *= numServings;
+            nutInfo.Cholesterol *= numServings;
+        }
     }
 }

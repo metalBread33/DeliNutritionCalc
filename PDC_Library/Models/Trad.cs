@@ -12,11 +12,11 @@ namespace PDC.Library.Models
     public class Trad
     {
         public NutritionInfo Nutrition { get; set; }
-        public decimal Weight { get; set; }
+        public float Weight { get; set; }
         public string ItemName { get; set; }
         public int ServingSize { get; set; }
 
-        public Trad(TrogSQLEntry trog, decimal weight) 
+        public Trad(TrogSQLEntry trog, float weight) 
         {
             Nutrition = new NutritionInfo(trog);
             ItemName = trog.Name;

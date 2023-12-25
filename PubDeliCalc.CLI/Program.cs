@@ -1,5 +1,6 @@
 ﻿using PDC.Database;
 using PDC.Library.Models;
+using PDC.Library.Services;
 
 
 /*CLI used to test backend features as they are implemented. Useful for preventing
@@ -68,23 +69,14 @@ namespace PDC.CLI
             Console.WriteLine("Please select an item");
             string? answer = Console.ReadLine();
 
-            /*int item;
-            while (true)
-            {
-                if (!int.TryParse(answer, out int selection))
-                    Console.WriteLine("Invalid option, plase try again");
-                else
-                {
-                    item = selection;
-                    break;
-                }
-            } */
             int selection = validIntResponse(answer);
             Console.WriteLine("How much does this item weigh (in lbs)");
             answer = Console.ReadLine();
-            decimal weight = validDecResponse(answer);
+            float weight = validDecResponse(answer);
 
             Trad traditional = new Trad(meats[selection - 1], weight);
+
+            TradServices.current.calcNutrition(traditional);
 
             Console.WriteLine(traditional);
 
@@ -163,7 +155,7 @@ namespace PDC.CLI
             }
         }
 
-        static decimal validDecResponse (string? answer) 
+        static float validDecResponse (string? answer) 
         {
             while (true)
             {
@@ -172,7 +164,7 @@ namespace PDC.CLI
                     Console.WriteLine("Invalid, try again");
                     answer = Console.ReadLine();
                 }
-                else if (!decimal.TryParse(answer, out decimal selection))
+                else if (!float.TryParse(answer, out float selection))
                 {
                     Console.WriteLine("Invalid, try again");
                     answer = Console.ReadLine();
