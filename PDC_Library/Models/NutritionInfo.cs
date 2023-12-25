@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PDC.Database;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,6 +31,18 @@ namespace PDC.Library.Models
             TransFat = tFat;
             Sodium = sodium;
             Cholesterol = cholesterol;
+        }
+
+        public NutritionInfo (TrogSQLEntry entry)
+        {
+            Calories = entry.Calories;
+            Carbs = entry.Carbs;
+            Fat = entry.Fat;
+            Protein = entry.Protein;
+            SaturatedFat = entry.Sodium;
+            TransFat = entry.Fat;
+            Sodium = entry.Sodium;
+            Cholesterol = entry.Cholesterol;
         }
 
         public NutritionInfo() 

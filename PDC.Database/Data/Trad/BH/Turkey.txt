@@ -1,5 +1,5 @@
 ﻿ID,Name,Calories,Carbs,Fat,Protein,Sat,Trans,Sodium,Choles,ServingSize
-001,Lower Sodium Turkey,60,0,12,0,0,360,20,2
+001,Lower Sodium Turkey,60,0,0,12,0,0,360,20,2
 002,Blackened Turkey Breast,60,2,0.5,12,0,0,700,30,2
 003,Cajun Turkey,60,1,0.5,13,0,0,650,25,2
 004,Jerk Turkey,60,0,1,12,0,0,450,25,2
@@ -11,4 +11,4 @@
 010,No Salt Added Turkey,70,0,1,14,0,0,55,40,2
 011,Black Forest Turkey,60,0,1,13,0,0,390,25,2
 012,Ovengold Roasted Turkey,60,0,1,11,0,0,360,20,2
-013,Pastrami Seasoned Turkey,1,1,13,0,0,460,25,2
+013,Pastrami Seasoned Turkey,60,1,1,13,0,0,460,25,2

@@ -18,9 +18,10 @@ namespace PDC.Database
         public float TransFat { get; set; }
         public float Sodium { get; set; }
         public float Cholesterol { get; set; }
+        public int ServingSize { get; set; }
         
         public TrogSQLEntry(int id, string name, float calories, float carbs, float fat,
-            float protein, float sat, float trans, float sod, float cholesterol)
+            float protein, float sat, float trans, float sod, float cholesterol, int ss)
         {
             Id = id;
             Name = name;
@@ -32,6 +33,7 @@ namespace PDC.Database
             TransFat = trans;
             Sodium = sod;
             Cholesterol = cholesterol;
+            ServingSize = ss;
         }
 
         public override string ToString()
@@ -67,14 +69,15 @@ namespace PDC.Database
             foreach (string line in File.ReadLines($"{root}{filename}"))
             {
                 string[] info = line.Split(',');
-                
+
                 if (info[0] == "ID") //skips the first line with titles
                     continue;
                 list.Add(new TrogSQLEntry(
                     int.Parse(info[0]), info[1], float.Parse(info[2]), float.Parse(info[3]),
                     float.Parse(info[4]), float.Parse(info[5]), float.Parse(info[6]),
-                    float.Parse(info[7]), float.Parse(info[8]), float.Parse(info[9]))
-                    );
+                    float.Parse(info[7]), float.Parse(info[8]), float.Parse(info[9]),
+                    int.Parse(info[10]))
+                );
             }
             return list;
         }

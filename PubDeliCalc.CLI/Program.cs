@@ -49,11 +49,20 @@ namespace PDC.CLI
 
         static void Traditional()
         {
-            Console.WriteLine("Traditional called");
-            Console.WriteLine("Testing TROG abilitiy to read from a file");
-            List<TrogSQLEntry>? turkeys = TrogSQL.current.getFromFile(TradFileSelection());
-            foreach (var turkey in turkeys)
-                Console.WriteLine(turkey.ToString());
+            List<TrogSQLEntry>? meats;
+            meats = TrogSQL.current.getFromFile(TradFileSelection());
+            while (true)
+            {
+                if (meats == null)
+                {
+                    meats = TrogSQL.current.getFromFile(TradFileSelection());
+                }
+                else break;
+            }
+          
+
+            foreach (var meat in meats)
+                Console.WriteLine(meat.ToString());
         }
 
         static void Sub()
@@ -75,13 +84,22 @@ namespace PDC.CLI
             if (response == 1)
             {
                 //Publix
+                Console.WriteLine("1) Meat\n2)Cheese");
+                var pubFileSelect = Console.ReadLine();
+                int.TryParse(pubFileSelect, out var file);
+                if (file == 1)
+                    return "\\Trad\\Publix\\Meat.txt";
+                if (file == 2)
+                    return "\\Trad\\Publix\\Cheese.txt";
             }
+
             if (response == 2)
             {
+                //Boar's Head
                 Console.WriteLine("1) Turkey \n2) Ham \n3) Beef \n4) Chicken" +
                     "\n5) Loaves and shit \n6) Cheese");
-                var meatType = Console.ReadLine();
-                int.TryParse(meatType, out var file);
+                var bHFileSelect = Console.ReadLine();
+                int.TryParse(bHFileSelect, out var file);
                 if (file == 1)
                     return "\\Trad\\BH\\Turkey.txt";
                 if (file == 2)
@@ -94,9 +112,6 @@ namespace PDC.CLI
                     return "\\Trad\\BH\\Misc.txt";
                 if (file == 6)
                     return "\\Trad\\BH\\Cheese.txt";
-
-
-                return null;
             }
 
             Console.WriteLine("File not found, try again");
