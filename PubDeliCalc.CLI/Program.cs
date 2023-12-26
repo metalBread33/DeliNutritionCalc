@@ -3,8 +3,8 @@ using PDC.Library.Models;
 using PDC.Library.Services;
 
 
-/*CLI used to test backend features as they are implemented. Useful for preventing
- confusion when implementing a new feature.*/
+/*CLI used to test backend features as they are implemented. Useful for 
+ preventing confusion when implementing a new feature.*/
 namespace PDC.CLI
 {
     internal class Program
@@ -40,6 +40,7 @@ namespace PDC.CLI
             } while (Continue);
         }
 
+        //function used for displaying menu and returing user input
         static string Menu()
         {
             Console.WriteLine("What would you like to see?" +
@@ -48,46 +49,57 @@ namespace PDC.CLI
             return Console.ReadLine() ?? "10";
         }
 
+        //Function used to calculate and display information for
+        //traditional orders
         static void Traditional()
         {
-            List<TrogSQLEntry>? meats;
-            meats = TrogSQL.current.getFromFile(TradFileSelection());
+            List<TrogSQLEntry>? items;
+
+            //get the items user wants to see
+            items = TrogSQL.current.getFromFile(TradFileSelection());
             while (true)
             {
-                if (meats == null)
-                {
-                    meats = TrogSQL.current.getFromFile(TradFileSelection());
-                }
+                if (items == null)
+                    items = TrogSQL.current.getFromFile(TradFileSelection());
                 else break;
             }
 
             Console.Clear();
 
-            foreach (var meat in meats)
-                Console.WriteLine(meat.ToString());
+            //display list of items in the list
+            foreach (var item in items)
+                Console.WriteLine(item.ToString());
 
+            //Select an item from the list
             Console.WriteLine("Please select an item");
             string? answer = Console.ReadLine();
-
             int selection = validIntResponse(answer);
+            
+            //Ask user for item weight (packaging will be in pounds so I ask
+            //them for pounds
             Console.WriteLine("How much does this item weigh (in lbs)");
             answer = Console.ReadLine();
             float weight = validDecResponse(answer);
 
-            Trad traditional = new Trad(meats[selection - 1], weight);
+            //store information in a Trad object
+            Trad traditional = new Trad(items[selection - 1], weight);
 
+            //Calculate the item's nutrition based on weight
             TradServices.current.calcNutrition(traditional);
 
+            //Display to the user
             Console.WriteLine(traditional);
-
-
         }
 
+        //Function used to calculate and display information for
+        //sub orders
         static void Sub()
         {
             Console.WriteLine("Sub called");
         }
 
+        //Function used to calculate and display information for 
+        //hotcase orders
         static void HotCase()
         {
             Console.WriteLine("Hot called");
@@ -137,6 +149,7 @@ namespace PDC.CLI
 
         }
         
+        //Makes sure user input can be parsed into an int
         static int validIntResponse (string? answer)
         {
             while (true)
@@ -155,6 +168,7 @@ namespace PDC.CLI
             }
         }
 
+        //Makes sure user input can be parsed into a float
         static float validDecResponse (string? answer) 
         {
             while (true)

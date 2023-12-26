@@ -21,6 +21,7 @@ namespace PDC.Library.Services
 
         }
 
+        //Used to calculate the nutitional info of traditional items
         public void calcNutrition(Trad trad)
         {
             NutritionInfo updated;
@@ -31,7 +32,8 @@ namespace PDC.Library.Services
             float servings = ounces / trad.ServingSize;
             //Swap trad info and updated info
 
-            NutritionInfoServices.current.MultiplyByServings(servings, trad.Nutrition);
+            NutritionInfoServices.current.MultiplyByServings(servings,
+                trad.Nutrition);
         }
     }
 }

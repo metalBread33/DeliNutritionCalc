@@ -21,7 +21,9 @@ namespace PDC.Library.Services
             }
         }
 
-        public void MultiplyByServings(float numServings, NutritionInfo nutInfo)
+        //Used for multiplying all nutitional info by number of servings
+        public void MultiplyByServings(float numServings, 
+            NutritionInfo nutInfo)
         {
             nutInfo.Calories *= numServings;
             nutInfo.Carbs *= numServings;

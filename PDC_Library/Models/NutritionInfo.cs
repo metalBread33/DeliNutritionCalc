@@ -11,6 +11,7 @@ namespace PDC.Library.Models
      an instance of NutritionInfo that contains all of the nutrition info*/
     public class NutritionInfo   //Stores the nutritional information for items
     {
+        //Variables for Nutrition Information, should be self explanatory
         public float Calories { get; set; }
         public float Carbs { get; set; }
         public float Fat { get; set; }
@@ -19,19 +20,6 @@ namespace PDC.Library.Models
         public float TransFat { get; set; }
         public float Sodium { get; set; }
         public float Cholesterol { get; set; }
-
-        public NutritionInfo(float cal, float carbs, float fat, float protein,
-            float satFat, float tFat, float sodium, float cholesterol) 
-        {
-            Calories = cal;
-            Carbs = carbs;
-            Fat = fat;
-            Protein = protein;
-            SaturatedFat = satFat;
-            TransFat = tFat;
-            Sodium = sodium;
-            Cholesterol = cholesterol;
-        }
 
         public NutritionInfo (TrogSQLEntry entry)
         {
@@ -45,12 +33,6 @@ namespace PDC.Library.Models
             Cholesterol = entry.Cholesterol;
         }
 
-        public NutritionInfo() 
-        {
-            Calories = 0; Carbs = 0; Fat = 0; Protein = 0; SaturatedFat = 0;
-            TransFat = 0; Sodium = 0; Cholesterol = 0;
-        }
-
         public override string ToString()
         {
             return $"Calories: {Calories}\nCarbs: {Carbs}g\nFat: {Fat}g" +
@@ -58,7 +40,5 @@ namespace PDC.Library.Models
                 $"{TransFat}g\nProtein: {Protein}g\nSodium: {Sodium}mg" +
                 $"\nCholesterol: {Cholesterol}mg";
         }
-
-      
     }
 }
