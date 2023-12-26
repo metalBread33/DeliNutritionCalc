@@ -36,7 +36,12 @@ namespace PDC.CLI
                     default:
                         Console.WriteLine("Please enter a valid menu option?");
                         break;
+
                 }
+                Console.WriteLine("Press any key to continue");
+                Console.ReadLine();
+                Console.Clear();
+
             } while (Continue);
         }
 
@@ -86,6 +91,8 @@ namespace PDC.CLI
 
             //Calculate the item's nutrition based on weight
             TradServices.current.calcNutrition(traditional);
+
+            Console.Clear();
 
             //Display to the user
             Console.WriteLine(traditional);

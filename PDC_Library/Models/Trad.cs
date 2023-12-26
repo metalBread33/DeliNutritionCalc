@@ -26,7 +26,7 @@ namespace PDC.Library.Models
 
         public override string ToString()
         {
-            return $"{ItemName}\n{Nutrition}\n{Weight}\n{ServingSize}";
+            return $"{Weight} lbs of {ItemName}:\n{Nutrition}";
         }
     }
 
