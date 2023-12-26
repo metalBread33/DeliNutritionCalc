@@ -1,1 +1,2 @@
-﻿
+﻿ID,Name,Calories,Carbs,Fat,Protein,Sat,Trans,Sodium,Choles,ServingSize
+01,Mortadella with Pistachio Nuts,170,2,14,10,5,0,560,30,2
