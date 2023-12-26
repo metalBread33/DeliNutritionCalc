@@ -1,1 +1,6 @@
-﻿
+﻿ID,Name,Calories,Carbs,Fat,Protein,Sat,Trans,Sodium,Choles,ServingSize
+1,Corned Beef Top Round,80,0,2.5,14,1,0,490,30,2
+2,Top Round Pastrami,80,0,3,13,1,0,600,30,2
+3,Deluxe Low Sodium Roast Beef,90,0,3,15,1,0,80,35,2
+4,London Broil Roast Beef,70,0,3,12,1,0,310,25,2
+5,Londonport Roast Beef,80,2,2.5,12,1,0,350,40,2
