@@ -1,1 +1,10 @@
-﻿
+﻿ID,Name,Calories,Carbs,Fat,Protein,Sat,Trans,Sodium,Choles,ServingSize
+01,Firesmith Grilled Chicken,60,1,1.5,11,0,0,340,25,2
+02,Ichiban Teriyaki Chicken,70,2,1.5,12,0.5,0,510,35,2
+3,Chipotle Chicken,60,1,1,13,0,0,420,40,2
+4,All American BBQ Chicken,70,2,1,10,0,0,370,35,2
+5,Blazing Buffalo Chicken,60,0,1,13,0,0,460,35,2
+6,Everroast Chicken,60,0,1,10,0,0,440,30,2
+7,Golden Classic Lower Sodium Chicken,60,0,1.5,12,0,0,350,35,2
+8,Lemon Pepper Chicken,60,1,1,11,0,0,360,35,2
+9,Rotisserie Seasoned Chicken,60,0,1,11,0,0,400,35,2

@@ -1,1 +1,1 @@
-﻿
+﻿ID,Name,Calories,Carbs,Fat,Protein,Sat,Trans,Sodium,Choles,ServingSize
