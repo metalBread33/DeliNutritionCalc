@@ -134,7 +134,7 @@ namespace PDC.CLI
             {
                 //Boar's Head
                 Console.WriteLine("1) Turkey \n2) Ham \n3) Beef \n4) Chicken" +
-                    "\n5) Loaves and shit \n6) Cheese");
+                    "\n5) Misc. Meats \n6) Cheese");
                 var bHFileSelect = Console.ReadLine();
                 int.TryParse(bHFileSelect, out var file);
                 if (file == 1)
